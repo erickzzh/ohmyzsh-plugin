@@ -17,6 +17,10 @@ showHelp () {
         mlb         "http://www.espn.com/mlb/"
         nfl         "http://www.espn.com/nfl/"
         ncaaf       "http://www.espn.com/college-football/"
+        nbastream   "https://www.reddit.com/r/nbastreams/"
+        nflstream   "https://www.reddit.com/r/nflstreams/"
+        mlbstream   "https://www.reddit.com/r/MLBStreams/"
+
     )
     #     check if the leagua is supported
     if [[ -z "$urls[$1]" ]]; then
@@ -30,7 +34,8 @@ showHelp () {
         # join arguments passed with '+', then append to search engine URL
         url="${urls[$1]}${(j:+:)@[2,-1]}"
     else
-        # goto the main page
+        # build main page url:
+        # split by '/', then rejoin protocol (1) and domain (2) parts with '//'
         url="${(j://:)${urls[$1]}}"
     fi
 
@@ -44,3 +49,6 @@ alias nba='espn nba'
 alias mlb='espn mlb'
 alias nfl='espn nfl'
 alias ncaaf='espn ncaaf'
+alias nflstream='espn nflstream'
+alias nbastream='espn nbastream'
+alias mlbstream='espn mlbstream'
