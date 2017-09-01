@@ -15,7 +15,9 @@ schedule
 
 ### Adding a new plugin
 
-go to ##### _~/.zshrc_
+go to 
+
+##### _~/.zshrc_
 
 add
 ```shell
