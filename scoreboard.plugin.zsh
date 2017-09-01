@@ -25,13 +25,12 @@ showHelp () {
     fi
 
     # check for the number of param
-    if [[ $# -gt 1 ]]; then
+    if [[ $# -eq 1 ]]; then
         # build search url:
         # join arguments passed with '+', then append to search engine URL
         url="${urls[$1]}${(j:+:)@[2,-1]}"
     else
-        # build main page url:
-        # split by '/', then rejoin protocol (1) and domain (2) parts with '//'
+        #goto main page
         url="${(j://:)${urls[$1]}}"
     fi
 
