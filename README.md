@@ -6,7 +6,10 @@ helps user to access espn from commandline using zsh.
   NBA,
   MLB,
   NFL,
-  NCCAF
+  NCCAF,
+  nbastream,
+  nflstream,
+  mlbstream
 
 ## optional params ## 
 scoreboard,
