@@ -25,7 +25,7 @@ showHelp () {
     fi
 
     # check for the number of param
-    if [[ $# -eq 1 ]]; then
+    if [[ $# -gt 1 ]]; then
         # build search url:
         # join arguments passed with '+', then append to search engine URL
         url="${urls[$1]}${(j:+:)@[2,-1]}"
