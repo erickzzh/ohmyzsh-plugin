@@ -30,8 +30,7 @@ showHelp () {
         # join arguments passed with '+', then append to search engine URL
         url="${urls[$1]}${(j:+:)@[2,-1]}"
     else
-        # build main page url:
-        # split by '/', then rejoin protocol (1) and domain (2) parts with '//'
+        # goto the main page
         url="${(j://:)${urls[$1]}}"
     fi
 
