@@ -2,13 +2,15 @@
 
 helps user to access espn from commandline using zsh.
 
-optional params are 
--scoreboard
--standings
--schedule
+## Four leagues ##
+  NBA,
+  MLB,
+  NFL,
+  NCCAF
 
-Four leagues are supported 
--NBA
--MLB
--NFL
--NCCAF
+## optional params ## 
+scoreboard,
+standings,
+schedule
+
+
